@@ -23,6 +23,7 @@ var allFeeds = [
     }
 ];
 
+
 /* This function starts up our application. The Google Feed
  * Reader API is loaded asynchonously and will then call this
  * function when the API is loaded.
@@ -51,6 +52,7 @@ function init() {
        contentType:"application/json",
        success: function (result, status){
 
+                 console.log(result);
                  var container = $('.feed'),
                      title = $('.header-title'),
                      entries = result.feed.entries,
